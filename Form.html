@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+        textarea {background:none;}
+        input {background: none;}
+        .button {
+            background: darkolivegreen;
+            color: blanchedalmond;
+            font-size: 9pt;
+        }
+        .photo { padding-left: 100px;}
+         body {
+             height: 100%;
+         }
+
+        body {
+            margin: 0;
+
+            background: linear-gradient(-45deg, rgba(113, 185, 41, 0.87), rgba(219, 250, 109, 0.67), #FFFFFF);
+            background-size: 400% 400%;
+            animation: gradient 10s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0 50%;
+            }}
+    </style>
+</head>
+<body background="../Images/background.png">
+<h1>Message me if you have any questions or suggestions:</h1>
+<form>
+
+    <input type="text" name="Firstname" placeholder="Your name">
+    <hr color="black"width="850" align="left">
+    <input type="radio" name="sex" id="female">
+    <label for="female">Female</label>
+    <input type="radio" name="sex" id="male">
+    <label for="male">Male</label>
+    <hr color="black" width="850" align="left">
+    <input type="text" name="Email" placeholder="Email address">
+    <hr color="black" width="850" align="left">
+    <textarea name="messeage" id="messageform" placeholder="Text here" cols="50" rows="10"></textarea>
+    <img src="../Images/ezgif-4-f5fd2d1ba74d.gif"  class="photo">
+    <hr color="black" width="850" align="left">
+    <input type="button" class="button" value="Send">
+    <button> <a href="../Index.html">Back</a> </button>
+</form>
+</body>
+</html>
